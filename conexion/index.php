@@ -12,7 +12,14 @@
 
 foreach ($flores as $flor => $array) {
 	  echo "<p>$flor</br>$array<p>";
+
+
+	  foreach ($array as $telefono => $numero) {
+	  echo "<p>$telefono</br>$numero<p>";
 }
+
+}
+
 
 
    $nombres =array('Zuleidy', 'Gloria', 'Nelson', 'Ricardo', 'Esteban'  );
