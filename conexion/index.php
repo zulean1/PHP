@@ -19,6 +19,29 @@ foreach ($flores as $flor => $array) {
 }
 
 }
+//mejor manera de correr un array complejo
+
+foreach($flores as $titulo => $dato) {
+
+    if(!is_array($dato)) {
+        if($dato === True) {
+            $dato = 'SI';
+
+        } else if ($dato === False) {
+            $dato = 'NO';
+}
+            echo "<p>{$titulo}: {$dato}</p>" . chr(10);
+
+    } else {
+
+foreach($dato as $tipo_telefono => $numero) {
+    
+    echo "<p>Teléfono {$tipo_telefono}: {$numero}<p>" . chr(10);
+
+}
+}
+}
+
 
 
 
