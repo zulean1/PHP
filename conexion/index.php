@@ -1,7 +1,4 @@
-<?php 
-  
 
- ?>
  <!DOCTYPE html>
  <html lang="es">
  <head>
@@ -17,7 +14,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title text-danger">Registro de Partidas</h5>
-       <form class=" " method="POST" action="">
+       <form class=" " method="POST" action="registrar">
               <div class="form-row">
                   <div class="form-group col-md-6 px-3 py-3">
                       <label for="codigo" class="text-danger">Código</label>
@@ -35,5 +32,7 @@
   
   </div>
 </div>
+
+
  </body>
  </html>
