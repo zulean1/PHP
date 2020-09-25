@@ -1,57 +1,5 @@
 <?php 
-   
-   $flores=['apellido' => 'Pérez',
-'Fecha de nacimiento' => '23-11-1970',
-'Teléfonos' => array('Casa' => '4310-9030',
-'Móvil' => '15 4017-
-2530',
-'Trabajo' => '4604-
-9000'),
-'Casado' => True,
-'Pasaporte' => False, ];
-
-foreach ($flores as $flor => $array) {
-	  echo "<p>$flor</br>$array<p>";
-
-
-	  foreach ($array as $telefono => $numero) {
-	  echo "<p>$telefono</br>$numero<p>";
-}
-
-}
-//mejor manera de correr un array complejo
-
-foreach($flores as $titulo => $dato) {
-
-    if(!is_array($dato)) {
-        if($dato === True) {
-            $dato = 'SI';
-
-        } else if ($dato === False) {
-            $dato = 'NO';
-}
-            echo "<p>{$titulo}: {$dato}</p>" . chr(10);
-
-    } else {
-
-foreach($dato as $tipo_telefono => $numero) {
-    
-    echo "<p>Teléfono {$tipo_telefono}: {$numero}<p>" . chr(10);
-
-}
-}
-}
-
-
-
-
-   $nombres =array('Zuleidy', 'Gloria', 'Nelson', 'Ricardo', 'Esteban'  );
-   
-   foreach ($nombres as $nombre) {
-   	   echo "<p>$nombre</br><p>";
-   }
-
-
+  
 
  ?>
  <!DOCTYPE html>
@@ -64,12 +12,12 @@ foreach($dato as $tipo_telefono => $numero) {
  </head>
  <body>
  <div class="card text-center mx-5 my-5 px-3 py-3">
-  <div class="card-header bg-primary">
+  <div class="card-header bg-warning">
     <h5 class="text-white">Partidas Presupuestarias</h5>
   </div>
   <div class="card-body">
     <h5 class="card-title text-danger">Registro de Partidas</h5>
-       <form class=" " method="POST" action="registrar">
+       <form class=" " method="POST" action="">
               <div class="form-row">
                   <div class="form-group col-md-6 px-3 py-3">
                       <label for="codigo" class="text-danger">Código</label>
@@ -80,10 +28,10 @@ foreach($dato as $tipo_telefono => $numero) {
                      <input type="text" class="form-control " id="denomminacion" placeholder="Denominación" name="denominacion">
                   </div>
               </div>
-              <button type="submit" class="btn btn-danger my-2 ">Registrar</button>
+              <button type="submit" class="btn btn-primary my-2 ">Registrar</button>
           </form>
     </div>
-  <div class="card-footer bg-primary">
+  <div class="card-footer bg-warning">
   
   </div>
 </div>
