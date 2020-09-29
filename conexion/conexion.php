@@ -1,20 +1,20 @@
 <?php 
 
-  class Conexion
-  {
+  
 
   	
-  	private $usuario ="admin";
-    private $contrasena ="root";
-    public  $pdo =null;
+  	 $usuario ="admin";
+     $contrasena ="root";
+     $pdo =null;
    
 
   	
-  	function __construct()
-  	{
+  	
   		try {
         
-          	$this->pdo = new PDO('mysql:host=localhost;dbname=partida', $this->usuario, $this->contrasena);
+          	$pdo = new PDO('mysql:host=localhost;dbname=partida', $usuario,$contrasena);
+
+            echo "Conexion realizada";
   
  
          } catch (PDOException $e) {
@@ -22,8 +22,8 @@
 }
 
   
-  	}
-  }
+ 
+  
 
 
 
