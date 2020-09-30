@@ -4,7 +4,7 @@
 <head>
 	 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	   <link rel="stylesheet" href="../conexion/public/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	   <link rel="stylesheet" href="../public/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="annymous">
 	 <title>Inicio</title>
@@ -19,15 +19,7 @@
          <ul class="nav justify-content-end">
          
            <li> <span class="text-white"> <?php echo $fecha=date('d-m-Y') ;?> </span></li>
+            <li> <a href="login.php" class="text-white p-3"> Cerrar sesion </a></li>
 
       
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
-                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Bitacora</a>
-                  <a class="dropdown-item" href="#">Configuración</a>
-                  <a class="dropdown-item" href="#">Cerrar Sesíon</a>
-                </div>
-            </li>
-          </ul>
     </nav>

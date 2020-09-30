@@ -1,7 +1,6 @@
 <?php 
 
-   class Conexion
-  {
+  class Conexion  {
 
     
     private $usuario ="admin";
@@ -23,8 +22,12 @@
 
   
     }
+  
+    
   }
 
+    
+   
 
 
 
