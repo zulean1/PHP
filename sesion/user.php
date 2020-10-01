@@ -1,6 +1,6 @@
 <?php 
 
-include_once 'conexion/conexion.php';
+require_once 'conexion/conexion.php';
 
 class User extends Conexion
 {
@@ -18,11 +18,13 @@ class User extends Conexion
 	{
        $md5pass = md5($password);
 
-       $con= $this->pdo->prepare('SELECT * FROM usuario WHERE user= :correo AND password = :password');
-       $con->execute(['correo'=> $user, 'password' => $md5pass  ]);
-		
+       $conexion= new Conexion();
 
-		if ($con->rowCount()) {
+       $conexion= $this->pdo->prepare('SELECT * FROM usuario WHERE correo=$user AND password = $password');
+      $conexion->execute(['correo'=> $user, 'password' => $md5pass  ]);
+
+
+		if ($conexion->rowCount()) {
 			return true;
 		}
 		else{

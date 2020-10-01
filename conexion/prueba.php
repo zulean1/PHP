@@ -18,10 +18,14 @@ class Prueba extends Conexion {
             $codigo=$_POST['codigo'];
             $denominacion=$_POST['denominacion'];
 
-            $registrar= 'INSERT INTO partida (Codigo , Denominacion) VALUES (?,?)';
-            $registro=$this->pdo->prepare($registrar);
+            $conexion= new Conexion();
+
+            $conexion= 'INSERT INTO partida (Codigo , Denominacion) VALUES (?,?)';
+            $registro=$this->pdo->prepare($conexion);
             return $registro->execute(array($codigo, $denominacion));
-            var_dump($registro);            
+            var_dump($registro); 
+
+            echo "registro realizado";           
           
 }
         else  {

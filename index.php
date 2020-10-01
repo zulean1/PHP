@@ -23,6 +23,7 @@
 
 
  	if ($user->UserExist($viewco,$viewpas)) {
+ 
  		echo "Usuario existe";
  	}
  	else{

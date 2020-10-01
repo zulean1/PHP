@@ -5,7 +5,7 @@
     
     private $usuario ="admin";
     private $contrasena ="root";
-    private  $pdo =null;
+    public  $pdo =null;
    
 
     
