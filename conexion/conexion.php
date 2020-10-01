@@ -5,7 +5,7 @@
     
     private $usuario ="admin";
     private $contrasena ="root";
-    public  $pdo =null;
+    private  $pdo =null;
    
 
     
@@ -13,7 +13,7 @@
     {
       try {
         
-            $this->pdo = new PDO('mysql:host=localhost;dbname=partida', $this->usuario, $this->contrasena);
+ $this->pdo = new PDO('mysql:host=localhost;dbname=partida', $this->usuario, $this->contrasena);
   
  
          } catch (PDOException $e) {

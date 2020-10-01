@@ -10,8 +10,8 @@ class Sesion
 	}
 
 
-	function setUsuario($user){
-		$_SESSION['correo']= $user;
+	function setUsuario($correo){
+		$_SESSION['correo']= $correo;
 
 	}
 

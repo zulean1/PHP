@@ -8,6 +8,11 @@ class User extends Conexion
 	private $nombre;
 	private $user;
 
+	function __construct(){
+		
+		parent::__construct();
+	}
+
 
 	public function UserExist($user, $password)
 	{
