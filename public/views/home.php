@@ -4,7 +4,7 @@
 <head>
 	 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	   <link rel="stylesheet" href="../public/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	   <link rel="stylesheet" href="public/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="annymous">
 	 <title>Inicio</title>
@@ -19,7 +19,17 @@
          <ul class="nav justify-content-end">
          
            <li> <span class="text-white"> <?php echo $fecha=date('d-m-Y') ;?> </span></li>
-            <li> <a href="login.php" class="text-white p-3"> Cerrar sesion </a></li>
+            <li> <a href="sesion/logout.php" class="text-white p-3"> Cerrar sesion </a></li>
 
       
     </nav>
+   <div class="card text-center mx-5 my-5 px-3 py-3">
+  <div class="card-header bg-primary">
+   
+  </div>
+  <div class="card-body">
+     <h5 class="text-primary">Bienvenido <?php echo $user->getUser();?> </h5>
+    </div>
+  <div class="card-footer bg-primary">
+  
+  </div>

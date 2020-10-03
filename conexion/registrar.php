@@ -11,6 +11,8 @@ include_once 'prueba.php';
           
             $registro = $prueba->registrar($codigo,$denominacion);
 
+           
+
 
             echo "registro realizado";      
 

@@ -6,7 +6,7 @@ class User extends Conexion
 {
 	
 	private $nombre;
-	private $user;
+	private $correo;
 
 	function __construct(){
 		
@@ -14,14 +14,14 @@ class User extends Conexion
 	}
 
 
-	public function UserExist($user, $password)
+	public function UserExist($correo, $password)
 	{
-       $md5pass = md5($password);
+       //$md5pass = md5($password);
 
        $conexion= new Conexion();
 
-       $conexion= $this->pdo->prepare('SELECT * FROM usuario WHERE correo =? AND password');
-       $conexion->execute(['correo' => $user , 'password ' => $password]);
+       $conexion= $this->pdo->prepare('SELECT * FROM usuario WHERE correo =? AND password=?');
+       $conexion->execute(array($correo,$password));
 
 
 		if ($conexion->rowCount()) {
@@ -32,15 +32,15 @@ class User extends Conexion
 		}
 	}
 
-	public function setUser ($user)
+	public function setUser ($correo)
 	{
-	  $con= $this->pdo->prepare('SELECT * FROM usuario WHERE user = :correo ');
-       $con->execute(['correo'=> $user]);
+	  $con= $this->pdo->prepare('SELECT * FROM usuario WHERE correo=? ');
+       $con->execute(array($correo));
 
 
        foreach ($con as $usuario ) {
        	 $this->nombre= $usuario['nombre'];
-         $this->user= $usuario['correo'];
+         $this->correo= $usuario['correo'];
 
        }
 	}

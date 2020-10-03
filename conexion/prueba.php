@@ -13,11 +13,24 @@ class Prueba extends Conexion {
 
  function registrar ($codigo ,$denominacion)
   {
-               
+     try {
+           
             $conexion= 'INSERT INTO partida (Codigo , Denominacion) VALUES (?,?)';
             $registro=$this->pdo->prepare($conexion);
             return $registro->execute(array($codigo, $denominacion));
-            var_dump($registro); 
+
+            
+            $registro = $prueba->registrar($codigo,$denominacion);
+
+
+          
+
+            
+        }
+
+              catch(PDOException $e) {
+            echo $e->getMessage();
+         }
 
   }
 
