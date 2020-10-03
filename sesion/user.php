@@ -20,8 +20,8 @@ class User extends Conexion
 
        $conexion= new Conexion();
 
-       $conexion= $this->pdo->prepare('SELECT * FROM usuario WHERE correo=$user AND password = $password');
-      $conexion->execute(['correo'=> $user, 'password' => $md5pass  ]);
+       $conexion= $this->pdo->prepare('SELECT * FROM usuario WHERE correo =? AND password');
+       $conexion->execute(['correo' => $user , 'password ' => $password]);
 
 
 		if ($conexion->rowCount()) {
