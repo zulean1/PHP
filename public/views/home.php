@@ -17,9 +17,11 @@
         <span class="navbar-brand mb-0 h1 text-white">Prácticas en PHP </span>
       
          <ul class="nav justify-content-end">
+           <li> <a href="public/views/user.php" class="text-white p-3"> Usuarios </a></li>
          
            <li> <span class="text-white"> <?php echo $fecha=date('d-m-Y') ;?> </span></li>
             <li> <a href="sesion/logout.php" class="text-white p-3"> Cerrar sesion </a></li>
+          </ul>
 
       
     </nav>

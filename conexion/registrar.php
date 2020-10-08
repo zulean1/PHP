@@ -8,8 +8,8 @@ include_once 'prueba.php';
             $codigo=$_POST['codigo'];
             $denominacion=$_POST['denominacion'];
 
-          
-            $registro = $prueba->registrar($codigo,$denominacion);
+         
+             $prueba->registrar($codigo,$denominacion);
 
            
 

@@ -14,6 +14,13 @@ class User extends Conexion
 	}
 
 
+   public function registrar($correo, $password, $nombre)
+   {
+   
+       $conexion= $this->pdo->prepare('INSERT INTO ( nombre, correo, password) VALUES (?,?,?) ');
+        return $conexion->execute(array($correo,$password, $nombre));
+   }
+
 	public function UserExist($correo, $password)
 	{
        //$md5pass = md5($password);
