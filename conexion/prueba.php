@@ -18,6 +18,7 @@ class Prueba extends Conexion {
             $conexion= 'INSERT INTO partida (Codigo,Denominacion) VALUES (?,?)';
             $registro=$this->pdo->prepare($conexion);
           return $registro->execute(array($codigo, $denominacion));
+      
             
         }
 

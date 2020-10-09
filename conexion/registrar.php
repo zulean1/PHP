@@ -2,6 +2,7 @@
 include_once 'prueba.php';
 
 
+
   $prueba = new Prueba();
     
     if (isset($_POST) ) {
