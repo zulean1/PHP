@@ -3,14 +3,16 @@ include_once 'prueba.php';
 
 
 
-  $prueba = new Prueba();
+  $registro = new Prueba();
     
     if (isset($_POST) ) {
             $codigo=$_POST['codigo'];
             $denominacion=$_POST['denominacion'];
 
          
-             $prueba->registrar($codigo,$denominacion);
+             $registro->registro($codigo,$denominacion);
+             var_dump( $registro 
+      );
 
            
 
@@ -25,10 +27,10 @@ include_once 'prueba.php';
         }   
 
 
-           $partida = $prueba->listar();
+           $partida = $registro->listar();
   
            foreach ($partida as  $partidas) {
-             $partida = $prueba->listar();
+             $partida = $registro->listar();
 
 
              echo $partidas['Codigo'];

@@ -10,23 +10,16 @@ class Prueba extends Conexion {
     }
 
 
+  public function registro ( $codigo , $denominacion){
 
- function registrar ($codigo ,$denominacion)
-  {
-     try {
-           
-            $conexion= 'INSERT INTO partida (Codigo,Denominacion) VALUES (?,?)';
-            $registro=$this->pdo->prepare($conexion);
-          return $registro->execute(array($codigo, $denominacion));
       
-            
-        }
+    $agregar= ' INSERT INTO partida (Codigo,Denominacion) VALUES (?,?)';
+    $v_agregar=$this->pdo->prepare($agregar);
+   return $v_agregar->execute(array( $codigo, $denominacion));
 
-              catch(PDOException $e) {
-            echo $e->getMessage();
-         }
 
-  }
+
+    }
 
   
      public function listar(){

@@ -45,7 +45,6 @@ class Perro
    } 
 
 
-
     public function MoverCola()
     {
        return 'estoy moviendo la cola';
@@ -59,4 +58,4 @@ class Perro
 
 
 
-}
+ }
