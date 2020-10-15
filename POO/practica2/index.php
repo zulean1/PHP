@@ -2,6 +2,7 @@
 
 include_once 'escuela.php';
 include_once 'persona.php';
+include_once 'animal.php';
 
 class Index
 {
