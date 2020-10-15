@@ -11,8 +11,7 @@ include_once 'prueba.php';
 
          
              $registro->registro($codigo,$denominacion);
-             var_dump( $registro 
-      );
+             var_dump( $registro );
 
            
 

@@ -14,6 +14,8 @@ include_once 'perro.php';
              echo $persona->tocar($perro, 'cabeza') . '<br>';
              echo $persona->darComer($perro, 'carne') . '<br>';
        }
+
+    
 }
 $index = new Index();
 $index->ejecutar();
