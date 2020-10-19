@@ -8,31 +8,33 @@ class Persona
 
  {
 	private $_nombre;
-	private $_edad;
+	private $_apellido;
 
 
-	  function __construct ($_nombre, $_edad)
+	  function __construct ($_nombre, $_apellido)
 	{
 		$this->$_nombre= $_nombre;
-		$this->$_edad= $_edad;
+		$this->$_apellido= $_apellido;
 
-		echo "$_nombre tiene $_edad";
+		echo "$_nombre y $_apellido";
 		
 	}
 
-     function tocar($objeto, $lugar)
-      {
+	public function setagregarE()
+	{
+        $this->estudiantes  = $estudiantes;
+	}
 
-          return $objeto->tocan($lugar);
-      } 
+	public function setagregarC()
+	{
+        $this->conductor = $conductor;
+	}
 
+	public function setagregarA()
+	{
+        $this->ayudante = $ayudante;
+	}
 
-     function darComer($objeto, $comida)
-      {
-
-         return $objeto->comer($comida);
-         
-       }
 
 	
 }
