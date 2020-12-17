@@ -38,7 +38,7 @@ class Index
         $escuela->add($persona3);
         $escuela->add($persona4);
 
-
+  
        
 
 

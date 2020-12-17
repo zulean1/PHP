@@ -7,6 +7,7 @@ class Persona
 	private $_nombre;
 	private $_apellido;
 	private $_edad;
+	private $_hermano;
 
 
 	public  function Datos ($_nombre, $_apellido, $_edad)
@@ -34,9 +35,9 @@ class Persona
          
        }
 
-      private function parentezco()
+      private function setHermanos()
       {
-      	
+      	$this->_hermano= $hermano;
       
       }
 

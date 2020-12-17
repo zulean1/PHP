@@ -17,10 +17,7 @@ class Escuela
 
 }
 
-  public function add($estudiante)
-  {
-    echo 'Estudiante: $estudiante';
-  }
+ 
 
 }
 
