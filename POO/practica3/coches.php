@@ -5,8 +5,7 @@ class Coche
 {
 	private  $_barrioa;
 	private $matricula;
-	private $_maximo_e;
-	private $_numero_c;
+	private $niños= [];
 	
 	function __construct($matricula, $_barrioa )
 	{
@@ -16,9 +15,13 @@ class Coche
 
 	}
 
-	public function setagregarE()
+	public function getNiños(){
+		return $this->niños;
+	}
+
+	public function BuscarNiños($nombre, $objeto)
 	{
-        $this->estudiantes  = $estudiantes;
+		return $objeto->BuscarNiños($nombre);
 	}
 
 

@@ -2,6 +2,8 @@
 
 include_once 'escuela.php';
 include_once 'persona.php';
+include_once 'gato.php';
+
 
 
 class Index
@@ -24,7 +26,8 @@ class Index
         $persona2->Datos('Roberto','Gonzalez', 8);
 
         $persona3 = new Persona ();
-        $persona3->Datos('Ramona','Hiou', 8);
+        $persona3->Datos('Marcos','Hiou', 6);
+    
 
         $persona4 = new Persona ();
         $persona4->Datos('Enrrique','Guardia', 8);
@@ -37,6 +40,15 @@ class Index
         $escuela->add($persona2);
         $escuela->add($persona3);
         $escuela->add($persona4);
+
+        //instaciando la clase gato
+
+        $gato = new Gato ();
+        $gato->Dato("Gruñon", "Marron");
+
+
+        //Tocando el gato de Marcos
+
 
   
        

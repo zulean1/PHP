@@ -17,6 +17,11 @@ class Escuela
 
 }
 
+  public function add($objeto){
+  	echo "Alumnos registrados";
+  	return $objeto;
+  }
+
  
 
 }

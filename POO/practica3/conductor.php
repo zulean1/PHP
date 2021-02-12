@@ -1,14 +1,18 @@
-<?php 
+<?php
+
+
 
 class Conductor
 {
 	private  $_nombre;
+	private   $_id;
 	
 
-	function __construct($_nombre)
+	function __construct($_nombre, $_id)
 	{
 		$this->_nombre = $_nombre;
-		 echo "Nombre de Conductor : $_nombre";
+		$this->_id = $_id;
+		 echo "Datos de Conductor : $_nombre. $_id";
 	}
 }
 

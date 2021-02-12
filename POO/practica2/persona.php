@@ -18,13 +18,12 @@ class Persona
 
 
 		echo "$_nombre $_apellido tiene $_edad";
-		
 	}
 
     public function tocar($objeto, $lugar)
       {
 
-          return $objeto->tocan($lugar);
+          return $objeto->tocar($lugar);
       } 
 
 

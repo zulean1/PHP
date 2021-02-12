@@ -32,7 +32,7 @@ class Index
         $conductor3 = new Conductor('Esteban');
 
 
-       $persona = new Persona('ramon');
+       $persona = new Persona('ramon',1);
 
 	}
 }
