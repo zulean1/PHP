@@ -12,10 +12,30 @@ class Prueba extends Conexion {
 
   public function registro ( $codigo , $denominacion){
 
+      if (isset($_POST) ) {
+            $codigo=$_POST['codigo'];
+            $denominacion=$_POST['denominacion'];
+
+         
+               $agregar= ' INSERT INTO partida (Codigo,Denominacion) VALUES (?,?)';
+            $v_agregar=$this->pdo->prepare($agregar);
+           return $v_agregar->execute(array( $codigo, $denominacion));
+
+
+           
+
+
+            echo "registro realizado";      
+
+           
+          
+}
+        else  {
+            echo "No se recibieron los datos";
+        }   
+
+
       
-    $agregar= ' INSERT INTO partida (Codigo,Denominacion) VALUES (?,?)';
-    $v_agregar=$this->pdo->prepare($agregar);
-   return $v_agregar->execute(array( $codigo, $denominacion));
 
 
 
